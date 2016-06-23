@@ -132,7 +132,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                                     outputstream.write(line)
                                 done_list.append(counter)
                             except:
-                                print "error"
+                                raise
                                 # In case of an error postpone until next time:
                                 outputstream.write(line)
                                 stop = False
