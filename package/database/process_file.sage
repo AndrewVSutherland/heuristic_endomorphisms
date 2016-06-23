@@ -108,6 +108,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                             h = R(den^3 * h(subst))
                             try:
                                 End = EndomorphismData(f, h, prec = prec)
+                                print "success"
                                 Lat = End.lattice()
                                 Lat_str = End._lat_
                                 Dec = End.decomposition()
