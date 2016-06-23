@@ -29,8 +29,6 @@
 
 import os, shutil
 
-load("../Initialize.sage")
-
 # Specify indices of defining polynomials and Sato-Tate group here;
 # making the latter negative ignores the final check.
 # fh_index = 1
