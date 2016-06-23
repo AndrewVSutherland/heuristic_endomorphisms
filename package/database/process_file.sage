@@ -95,6 +95,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                                     #"[[[[0,1],[0]],[[[0,1],-1]],['RR'],[1,-1],'USp(4)']]:[[0,1],[0]]:[]"
                                     "[[[[0,1],[0]],[[[0,1],-1]],['RR'],[1,-1],'USp(4)']]:[]:[]"
                                     + '\n')
+                            outputstream.flush()
                             processed += 1
                         # Avoiding a nasty infinite loop:
                         elif (subst == x) and (counter in hell):
@@ -125,6 +126,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                                             + ':' + repr(SplFoD_str).replace('\n', '').replace(' ', '')
                                             + ':' + repr(ECs_str).replace('\n', '').replace(' ', '')
                                             + '\n')
+                                    outputstream.flush()
                                     processed += 1
                                 else:
                                     outputstream.write(line)
