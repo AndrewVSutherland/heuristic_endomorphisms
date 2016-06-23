@@ -44,7 +44,7 @@ import os, shutil
 # calculation leads into an infinite loop):
 # hell = [ 56306 ]
 
-def process_file(infile,outfile,fh_index=1,st_index=-1,prec=300,hell=[],B=3,maxrun=32):
+def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=3,maxrun=32):
 
     # Specify input and output:
     intermediatefile = 'temp.txt'
