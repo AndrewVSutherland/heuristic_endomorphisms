@@ -107,6 +107,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                             f = R(den^6 * f(subst))
                             h = R(den^3 * h(subst))
                             try:
+                                print "calling Endomorphism data"
                                 End = EndomorphismData(f, h, prec = prec)
                                 print "success"
                                 Lat = End.lattice()
@@ -131,6 +132,7 @@ def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=
                                     outputstream.write(line)
                                 done_list.append(counter)
                             except:
+                                print "error"
                                 # In case of an error postpone until next time:
                                 outputstream.write(line)
                                 stop = False
