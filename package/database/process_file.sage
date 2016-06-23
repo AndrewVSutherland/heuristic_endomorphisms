@@ -46,8 +46,7 @@ import os, shutil
 
 def process_file(inputfile,outputfile,fh_index=1,st_index=-1,prec=300,hell=[],B=3,maxrun=32):
 
-    # Specify input and output:
-    intermediatefile = 'temp.txt'
+    intermediatefile = inputfile+'.endotemp'
 
     # Ambient ring needed for substitution:
     R.<x> = PolynomialRing(QQ)
