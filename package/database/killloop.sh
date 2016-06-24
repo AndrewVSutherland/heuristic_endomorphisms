@@ -1,5 +1,6 @@
 #!/bin/bash
 while [ 1 ]
-    ps -aux | grep "drew" | grep "magma.intel64" | awk '{if ($5+0 > 5) print $2}' | xargs kill
+do
+    ps -aux | grep "drew" | grep "magma.intel64" | awk '{if ($10+0 > 5) print $2}' | xargs kill
     sleep 30s
 done
